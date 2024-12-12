@@ -3,6 +3,8 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
 
+
+// Array con oggetti
 const bikesType = [
     {
         type: "Specialized",
@@ -24,3 +26,18 @@ const bikesType = [
         peso: 1900
     }
 ]
+
+let pesoMinore = bikesType[0];
+
+
+
+for( let i = 0; i < bikesType.length; i++) {
+    const objects = bikesType[i]; 
+   
+    if(objects.peso < pesoMinore.peso) {
+        pesoMinore = objects
+
+    }
+}
+
+console.log(pesoMinore)
