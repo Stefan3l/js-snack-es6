@@ -12,9 +12,13 @@
 
 function arrayIndice  (array, a, b) {
     
-    a < b
+    const arrayElem = []
 
-    return array.slice(a, b)
+    for(let i = a; i <=b; i++) {
+        arrayElem.push(array[i])
+    }
+
+    return arrayElem
 }
 
 
@@ -23,5 +27,5 @@ function arrayIndice  (array, a, b) {
 const arrayNumb = [20, 30, 40, 50, 60, 70];
 
 
-let isArray = arrayIndice(arrayNumb, 2, 5)
+let isArray = arrayIndice(arrayNumb, 2, 4)
 console.log(isArray)
