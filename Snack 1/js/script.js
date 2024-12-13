@@ -31,7 +31,7 @@ let pesoMinore = bikesType[0];
 
 
 
-for( let i = 0; i < bikesType.length; i++) {
+for( let i = 1; i < bikesType.length; i++) {
     const objects = bikesType[i]; 
    
     if(objects.peso < pesoMinore.peso) {

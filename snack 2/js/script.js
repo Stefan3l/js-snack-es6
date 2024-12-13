@@ -8,6 +8,13 @@
 
 // My function
 
+/**
+ * 
+ * @param {number} min 
+ * @param {number} max 
+ * @returns genera un numero compreso tra min e max
+ */
+
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
@@ -43,3 +50,17 @@ leagueTop[1].falli_subiti = getRndInteger(1, 70)
 leagueTop[2].falli_subiti = getRndInteger(1, 70)
 
 console.log(leagueTop)
+
+
+
+const teamFouls = []
+
+for(let i = 0; i < leagueTop.length; i++) {
+    const team = leagueTop[i];
+    teamFouls.push({
+        club: team.club,
+        falli_subiti: team.falli_subiti
+    })
+}
+
+console.log(teamFouls)
