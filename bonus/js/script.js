@@ -11,7 +11,7 @@
  */
 
 function arrayIndice  (array, a, b) {
-    let index1 = array.slice(a, b)
+    
     
 
     return array.slice(a, b)
